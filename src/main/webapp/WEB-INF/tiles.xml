@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="customerBoard.*.*" template="/WEB-INF/view/common/layout.jsp">
+		<put-attribute name="title" value="{1}" />
+		<put-attribute name="header" value="/WEB-INF/view/customer/inc/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/view/customer/{1}/{2}.jsp" />
+	</definition>
+	<definition name="adminBoard.*.*" template="/WEB-INF/view/common/layout.jsp">
+		<put-attribute name="title" value="{1}" />
+		<put-attribute name="header" value="/WEB-INF/view/admin/inc/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/view/admin/{1}/{2}.jsp" />
+	</definition>
+	<definition name="customerWrite" template="/WEB-INF/view/common/layout.jsp">
+		<put-attribute name="title" value="글쓰기" />
+		<put-attribute name="header" value="/WEB-INF/view/customer/inc/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/view/common/write.jsp" />
+	</definition>
+	<definition name="adminWrite" template="/WEB-INF/view/common/layout.jsp">
+		<put-attribute name="title" value="글쓰기" />
+		<put-attribute name="header" value="/WEB-INF/view/admin/inc/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/view/common/write.jsp" />
+	</definition>
+	<definition name="customerPost" template="/WEB-INF/view/common/layout.jsp">
+		<put-attribute name="title" value="게시글 상세페이지" />
+		<put-attribute name="header" value="/WEB-INF/view/customer/inc/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/view/common/post.jsp" />
+	</definition>
+	<definition name="adminPost" template="/WEB-INF/view/common/layout.jsp">
+		<put-attribute name="title" value="게시글 상세페이지" />
+		<put-attribute name="header" value="/WEB-INF/view/admin/inc/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/view/common/post.jsp" />
+	</definition>
+	<definition name="mypage" template="/WEB-INF/view/common/layout.jsp">
+		<put-attribute name="title" value="마이페이지" />
+		<put-attribute name="header" value="/WEB-INF/view/customer/inc/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/view/customer/mypage/mypage.jsp" />
+	</definition>
+	<definition name="management" template="/WEB-INF/view/common/layout.jsp">
+		<put-attribute name="title" value="회원관리" />
+		<put-attribute name="header" value="/WEB-INF/view/admin/inc/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/view/admin/management/management.jsp" />
+	</definition>
+</tiles-definitions>
