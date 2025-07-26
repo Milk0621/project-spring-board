@@ -1,4 +1,4 @@
-# Spring Board
+# Spring Board Project
 
 Spring Framework의 **MVC 아키텍처 실습**을 목적으로 제작한 게시판 프로젝트입니다.  
 Controller–Service–DAO 계층을 명확히 나누고, JSP 기반의 View 처리 및 Oracle 데이터베이스 연동을 직접 구성하여  
